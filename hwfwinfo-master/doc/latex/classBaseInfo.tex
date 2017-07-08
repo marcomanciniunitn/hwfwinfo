@@ -1,0 +1,114 @@
+\hypertarget{classBaseInfo}{}\section{Base\+Info$<$ T $>$ Class Template Reference}
+\label{classBaseInfo}\index{Base\+Info$<$ T $>$@{Base\+Info$<$ T $>$}}
+Inheritance diagram for Base\+Info$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classBaseInfo}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries set\+Value} (T value)\hypertarget{classBaseInfo_a09e8ede57d2eaad37b868ca2dafce74f}{}\label{classBaseInfo_a09e8ede57d2eaad37b868ca2dafce74f}
+
+\item 
+T {\bfseries get\+Value} ()\hypertarget{classBaseInfo_af3590382940cb865a5a8bb59d5d052af}{}\label{classBaseInfo_af3590382940cb865a5a8bb59d5d052af}
+
+\item 
+void \hyperlink{classBaseInfo_a84d4e0585478afa4fa067e7485a69159}{visit\+Value\+With\+Base\+Command} (\hyperlink{classVisitor}{Visitor} \&visitor, \hyperlink{classCommand}{Command} $\ast$cmd)
+\item 
+void \hyperlink{classBaseInfo_a903966b7c9bb3e206b72d7e167d0102a}{visit\+To\+Print} (\hyperlink{classVisitor}{Visitor} \&v)
+\item 
+void \hyperlink{classBaseInfo_aec2c01b1d1c5a1d8322e4e1c294872d5}{visit\+To\+Log} (\hyperlink{classVisitor}{Visitor} \&v, F\+I\+LE $\ast$log\+File)
+\item 
+void \hyperlink{classBaseInfo_aab20a2adc240dea5945e0c4340ade696}{visit\+To\+Assign} (\hyperlink{classVisitor}{Visitor} \&v, string to\+Assign)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Base\+Info@{Base\+Info}!visit\+To\+Assign@{visit\+To\+Assign}}
+\index{visit\+To\+Assign@{visit\+To\+Assign}!Base\+Info@{Base\+Info}}
+\subsubsection[{\texorpdfstring{visit\+To\+Assign(\+Visitor \&v, string to\+Assign)}{visitToAssign(Visitor &v, string toAssign)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf Base\+Info}$<$ T $>$\+::visit\+To\+Assign (
+\begin{DoxyParamCaption}
+\item[{{\bf Visitor} \&}]{v, }
+\item[{string}]{to\+Assign}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classBaseInfo_aab20a2adc240dea5945e0c4340ade696}{}\label{classBaseInfo_aab20a2adc240dea5945e0c4340ade696}
+Visit the object and assign his generic value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & the visitor used \\
+\hline
+{\em to\+Assign} & the value to assign (it\textquotesingle{}s everytime a string and the visitor will know how to cast it properly) \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classBaseProperty_a5213a052c34530a5f561149d7b48db60}{Base\+Property}.
+
+\index{Base\+Info@{Base\+Info}!visit\+To\+Log@{visit\+To\+Log}}
+\index{visit\+To\+Log@{visit\+To\+Log}!Base\+Info@{Base\+Info}}
+\subsubsection[{\texorpdfstring{visit\+To\+Log(\+Visitor \&v, F\+I\+L\+E $\ast$log\+File)}{visitToLog(Visitor &v, FILE *logFile)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf Base\+Info}$<$ T $>$\+::visit\+To\+Log (
+\begin{DoxyParamCaption}
+\item[{{\bf Visitor} \&}]{v, }
+\item[{F\+I\+LE $\ast$}]{log\+File}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classBaseInfo_aec2c01b1d1c5a1d8322e4e1c294872d5}{}\label{classBaseInfo_aec2c01b1d1c5a1d8322e4e1c294872d5}
+Visit the object and log it into a log file
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & the visitor used \\
+\hline
+{\em log\+File} & the log file \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classBaseProperty_a9e5f999d32dc4b0943948a70689565a1}{Base\+Property}.
+
+\index{Base\+Info@{Base\+Info}!visit\+To\+Print@{visit\+To\+Print}}
+\index{visit\+To\+Print@{visit\+To\+Print}!Base\+Info@{Base\+Info}}
+\subsubsection[{\texorpdfstring{visit\+To\+Print(\+Visitor \&v)}{visitToPrint(Visitor &v)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf Base\+Info}$<$ T $>$\+::visit\+To\+Print (
+\begin{DoxyParamCaption}
+\item[{{\bf Visitor} \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classBaseInfo_a903966b7c9bb3e206b72d7e167d0102a}{}\label{classBaseInfo_a903966b7c9bb3e206b72d7e167d0102a}
+Visit the object and print his content
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & the visitor used to print \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classBaseProperty_a3c5334878537be377d3d50cc8b5091be}{Base\+Property}.
+
+\index{Base\+Info@{Base\+Info}!visit\+Value\+With\+Base\+Command@{visit\+Value\+With\+Base\+Command}}
+\index{visit\+Value\+With\+Base\+Command@{visit\+Value\+With\+Base\+Command}!Base\+Info@{Base\+Info}}
+\subsubsection[{\texorpdfstring{visit\+Value\+With\+Base\+Command(\+Visitor \&visitor, Command $\ast$cmd)}{visitValueWithBaseCommand(Visitor &visitor, Command *cmd)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf Base\+Info}$<$ T $>$\+::visit\+Value\+With\+Base\+Command (
+\begin{DoxyParamCaption}
+\item[{{\bf Visitor} \&}]{v, }
+\item[{{\bf Command} $\ast$}]{cmd}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classBaseInfo_a84d4e0585478afa4fa067e7485a69159}{}\label{classBaseInfo_a84d4e0585478afa4fa067e7485a69159}
+Visit the object and set his generic value with a command
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & the visitor used to set the value \\
+\hline
+{\em cmd} & the command used to set the value \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classBaseProperty_a83a5d6b8ebee03e73e11a7a57df56df3}{Base\+Property}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/doomdiskday/workspace2/main/src/model/\+H\+W/\+Basic/Base\+Info.\+h\end{DoxyCompactItemize}

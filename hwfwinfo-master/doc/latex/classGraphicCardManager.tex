@@ -1,0 +1,108 @@
+\hypertarget{classGraphicCardManager}{}\section{Graphic\+Card\+Manager Class Reference}
+\label{classGraphicCardManager}\index{Graphic\+Card\+Manager@{Graphic\+Card\+Manager}}
+Inheritance diagram for Graphic\+Card\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classGraphicCardManager}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classGraphicCardManager_a6c94b17b01bd0f27bf0822c269d1c41c}{generate\+All\+Devices} ()
+\item 
+\hyperlink{classHWDevice}{H\+W\+Device} $\ast$ \hyperlink{classGraphicCardManager_a1835a9054bccb574e74dc2ebb2c28554}{generate\+New\+Device} (int position)
+\item 
+void \hyperlink{classGraphicCardManager_a42bc616062f94b2e4ee92a79ba537a16}{set\+Commands} (int device\+Position)
+\item 
+\hyperlink{classBaseDifference}{Base\+Difference} $\ast$$\ast$ \hyperlink{classGraphicCardManager_a17d988dac37f04cb1dddd45eef8c3aea}{generate\+Log\+Difference} ()
+\item 
+\hyperlink{classHWDevice}{H\+W\+Device} $\ast$ \hyperlink{classGraphicCardManager_ac71590c819520e60a491c8e69252efe1}{generate\+Fake\+Device} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\index{Graphic\+Card\+Manager@{Graphic\+Card\+Manager}!generate\+All\+Devices@{generate\+All\+Devices}}
+\index{generate\+All\+Devices@{generate\+All\+Devices}!Graphic\+Card\+Manager@{Graphic\+Card\+Manager}}
+\subsubsection[{\texorpdfstring{generate\+All\+Devices()}{generateAllDevices()}}]{\setlength{\rightskip}{0pt plus 5cm}void Graphic\+Card\+Manager\+::generate\+All\+Devices (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classGraphicCardManager_a6c94b17b01bd0f27bf0822c269d1c41c}{}\label{classGraphicCardManager_a6c94b17b01bd0f27bf0822c269d1c41c}
+Generate and populate the devices array. This method will be overwritten from the specific classes (\hyperlink{classBIOS}{B\+I\+OS}, H\+DD, ecc..) 
+
+Implements \hyperlink{classDeviceManager_ae9fa3bd3aa66f373d7748628b7ba26cc}{Device\+Manager}.
+
+\index{Graphic\+Card\+Manager@{Graphic\+Card\+Manager}!generate\+Fake\+Device@{generate\+Fake\+Device}}
+\index{generate\+Fake\+Device@{generate\+Fake\+Device}!Graphic\+Card\+Manager@{Graphic\+Card\+Manager}}
+\subsubsection[{\texorpdfstring{generate\+Fake\+Device()}{generateFakeDevice()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf H\+W\+Device} $\ast$ Graphic\+Card\+Manager\+::generate\+Fake\+Device (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classGraphicCardManager_ac71590c819520e60a491c8e69252efe1}{}\label{classGraphicCardManager_ac71590c819520e60a491c8e69252efe1}
+This abstract method will produce a Fake (Specified by the concrete classes) Device that will be used later to compare devices 
+
+Implements \hyperlink{classDeviceManager_a218031345b7b61c79f427985d950c3f3}{Device\+Manager}.
+
+\index{Graphic\+Card\+Manager@{Graphic\+Card\+Manager}!generate\+Log\+Difference@{generate\+Log\+Difference}}
+\index{generate\+Log\+Difference@{generate\+Log\+Difference}!Graphic\+Card\+Manager@{Graphic\+Card\+Manager}}
+\subsubsection[{\texorpdfstring{generate\+Log\+Difference()}{generateLogDifference()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Base\+Difference} $\ast$$\ast$ Graphic\+Card\+Manager\+::generate\+Log\+Difference (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classGraphicCardManager_a17d988dac37f04cb1dddd45eef8c3aea}{}\label{classGraphicCardManager_a17d988dac37f04cb1dddd45eef8c3aea}
+This abstract method will produce a \hyperlink{classBaseDifference}{Base\+Difference}, it will be used to compare different  between them.
+
+\begin{DoxyReturn}{Returns}
+the differences to populate 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classDeviceManager_ae9916011e50a6a48aea3d87b6c44b27e}{Device\+Manager}.
+
+\index{Graphic\+Card\+Manager@{Graphic\+Card\+Manager}!generate\+New\+Device@{generate\+New\+Device}}
+\index{generate\+New\+Device@{generate\+New\+Device}!Graphic\+Card\+Manager@{Graphic\+Card\+Manager}}
+\subsubsection[{\texorpdfstring{generate\+New\+Device(int position)}{generateNewDevice(int position)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf H\+W\+Device} $\ast$ Graphic\+Card\+Manager\+::generate\+New\+Device (
+\begin{DoxyParamCaption}
+\item[{int}]{position}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classGraphicCardManager_a1835a9054bccb574e74dc2ebb2c28554}{}\label{classGraphicCardManager_a1835a9054bccb574e74dc2ebb2c28554}
+Generate and return a new device in a specific position.
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & used by the device \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the generated device 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classDeviceManager_a64c7c17d8cb8d407361dbcf8f6f17ccf}{Device\+Manager}.
+
+\index{Graphic\+Card\+Manager@{Graphic\+Card\+Manager}!set\+Commands@{set\+Commands}}
+\index{set\+Commands@{set\+Commands}!Graphic\+Card\+Manager@{Graphic\+Card\+Manager}}
+\subsubsection[{\texorpdfstring{set\+Commands(int device\+Position)}{setCommands(int devicePosition)}}]{\setlength{\rightskip}{0pt plus 5cm}void Graphic\+Card\+Manager\+::set\+Commands (
+\begin{DoxyParamCaption}
+\item[{int}]{device\+Position}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classGraphicCardManager_a42bc616062f94b2e4ee92a79ba537a16}{}\label{classGraphicCardManager_a42bc616062f94b2e4ee92a79ba537a16}
+Set all commands used to retrieve infos. This method will be overwritten from the specific classes (\hyperlink{classBIOS}{B\+I\+OS}, H\+DD, ecc...)
+
+
+\begin{DoxyParams}{Parameters}
+{\em device\+Position} & the device position in the devices array \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classDeviceManager_ae367c6847b2988cf6249cbf6254261cb}{Device\+Manager}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/doomdiskday/workspace2/main/src/model/\+H\+W/\+Graphic\+Card/Graphic\+Card\+Manager.\+h\item 
+/home/doomdiskday/workspace2/main/src/model/\+H\+W/\+Graphic\+Card/Graphic\+Card\+Manager.\+cpp\end{DoxyCompactItemize}

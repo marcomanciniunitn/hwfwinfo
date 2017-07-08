@@ -1,0 +1,332 @@
+\hypertarget{classDeviceManager}{}\section{Device\+Manager Class Reference}
+\label{classDeviceManager}\index{Device\+Manager@{Device\+Manager}}
+
+
+{\ttfamily \#include $<$Device\+Manager.\+h$>$}
+
+Inheritance diagram for Device\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.426752cm]{classDeviceManager}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classDeviceManager_ab0e75c9472f3213243f5be200cf8a459}{get\+Number\+Of\+Devices} ()
+\item 
+\hyperlink{classHWDevice}{H\+W\+Device} $\ast$$\ast$ \hyperlink{classDeviceManager_a6d01b46c8522dc3d5a7cefbab539a21d}{get\+Devices} ()
+\item 
+string \hyperlink{classDeviceManager_aebc35de93caa9623ac28166f463494fb}{get\+File\+Path} ()
+\item 
+void \hyperlink{classDeviceManager_ac5ebb7ae4c669b43e96f2c533880c2a2}{print\+All\+Infos} ()
+\item 
+virtual bool \hyperlink{classDeviceManager_af9949548d51650ab8ac223d32559f8f0}{check\+Devices\+Existence} ()
+\item 
+virtual void \hyperlink{classDeviceManager_ae9fa3bd3aa66f373d7748628b7ba26cc}{generate\+All\+Devices} ()=0
+\item 
+virtual \hyperlink{classHWDevice}{H\+W\+Device} $\ast$ \hyperlink{classDeviceManager_a64c7c17d8cb8d407361dbcf8f6f17ccf}{generate\+New\+Device} (int position)=0
+\item 
+virtual void \hyperlink{classDeviceManager_ae367c6847b2988cf6249cbf6254261cb}{set\+Commands} (int device\+Position)=0
+\item 
+virtual void \hyperlink{classDeviceManager_a4c34a8b9035b29829739c533b611ab07}{set\+All\+Infos} (int position)
+\item 
+virtual void \hyperlink{classDeviceManager_a17458750431e2131c06e58e8b82a90d1}{find\+Devices} ()
+\item 
+virtual void \hyperlink{classDeviceManager_a0bbabbb33adf1eb6eee22ac78d1da7b7}{generate\+Log} ()
+\item 
+int \hyperlink{classDeviceManager_a7e7bcbfe9ad42a5986d354352b80d917}{count\+Devices\+From\+File} (string path)
+\item 
+\hyperlink{classHWDevice}{H\+W\+Device} $\ast$$\ast$ \hyperlink{classDeviceManager_a8c9576d042fb3a949c7658bb514a54ae}{retrieve\+From\+File} (string path, int \&err, int \&size)
+\item 
+virtual \hyperlink{classBaseDifference}{Base\+Difference} $\ast$$\ast$ \hyperlink{classDeviceManager_ae9916011e50a6a48aea3d87b6c44b27e}{generate\+Log\+Difference} ()=0
+\item 
+virtual \hyperlink{classHWDevice}{H\+W\+Device} $\ast$ \hyperlink{classDeviceManager_a218031345b7b61c79f427985d950c3f3}{generate\+Fake\+Device} ()=0
+\item 
+\hyperlink{classBaseDifference}{Base\+Difference} $\ast$$\ast$ \hyperlink{classDeviceManager_a2e15cd9f0728183029e9d078c942da0a}{check\+Devices} (\hyperlink{classHWDevice}{H\+W\+Device} $\ast$orig, \hyperlink{classHWDevice}{H\+W\+Device} $\ast$to\+Check)
+\item 
+\hyperlink{classBaseDifference}{Base\+Difference} $\ast$$\ast$$\ast$ \hyperlink{classDeviceManager_a571878f54147f206f63aad938fb59b51}{check\+Devices\+From\+File} (string path, int \&err, int \&size, int \&added, int \&removed)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string {\bfseries file\+Name}\hypertarget{classDeviceManager_a744ce0aeda4453860233c6f8b5adb3d4}{}\label{classDeviceManager_a744ce0aeda4453860233c6f8b5adb3d4}
+
+\item 
+string {\bfseries in\+File\+Name}\hypertarget{classDeviceManager_a4b4f8ded511116ad9247f9dff8e52276}{}\label{classDeviceManager_a4b4f8ded511116ad9247f9dff8e52276}
+
+\item 
+string {\bfseries on\+Difference\+Name}\hypertarget{classDeviceManager_a0ec69b1c6c309a18c35c929a8270de8e}{}\label{classDeviceManager_a0ec69b1c6c309a18c35c929a8270de8e}
+
+\item 
+int {\bfseries number\+Of\+Infos}\hypertarget{classDeviceManager_a423e58bd66300388667857304f89f488}{}\label{classDeviceManager_a423e58bd66300388667857304f89f488}
+
+\item 
+\hyperlink{classCommand}{Command} $\ast$ {\bfseries number\+Of\+Devices\+Command}\hypertarget{classDeviceManager_a2494b9606c93ee9fb33e32594fa575bf}{}\label{classDeviceManager_a2494b9606c93ee9fb33e32594fa575bf}
+
+\item 
+int {\bfseries number\+Of\+Devices}\hypertarget{classDeviceManager_a0d1b28c1d0439fed7c41a15974860697}{}\label{classDeviceManager_a0d1b28c1d0439fed7c41a15974860697}
+
+\item 
+\hyperlink{classHWDevice}{H\+W\+Device} $\ast$$\ast$ {\bfseries devices}\hypertarget{classDeviceManager_ac6a7ba09f929d09fbabf60d36db24b2c}{}\label{classDeviceManager_ac6a7ba09f929d09fbabf60d36db24b2c}
+
+\item 
+\hyperlink{classCommand}{Command} $\ast$$\ast$ {\bfseries commands}\hypertarget{classDeviceManager_a0f68f691cc8127b0eac36b3e4b2603fd}{}\label{classDeviceManager_a0f68f691cc8127b0eac36b3e4b2603fd}
+
+\item 
+int {\bfseries number\+Of\+Commands}\hypertarget{classDeviceManager_a6740c39443b17dc714bebd8b76c201d4}{}\label{classDeviceManager_a6740c39443b17dc714bebd8b76c201d4}
+
+\item 
+\hyperlink{classCommand}{Command} $\ast$ {\bfseries check\+Command}\hypertarget{classDeviceManager_abd465cbbacdcfdbe5c91afb365549b92}{}\label{classDeviceManager_abd465cbbacdcfdbe5c91afb365549b92}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries H\+W\+Manager}\hypertarget{classDeviceManager_abb119eaaf520facbb8c60125012911a2}{}\label{classDeviceManager_abb119eaaf520facbb8c60125012911a2}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract class used to manage completely a group of specific  
+
+\subsection{Member Function Documentation}
+\index{Device\+Manager@{Device\+Manager}!check\+Devices@{check\+Devices}}
+\index{check\+Devices@{check\+Devices}!Device\+Manager@{Device\+Manager}}
+\subsubsection[{\texorpdfstring{check\+Devices(\+H\+W\+Device $\ast$orig, H\+W\+Device $\ast$to\+Check)}{checkDevices(HWDevice *orig, HWDevice *toCheck)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Base\+Difference}$\ast$$\ast$ Device\+Manager\+::check\+Devices (
+\begin{DoxyParamCaption}
+\item[{{\bf H\+W\+Device} $\ast$}]{orig, }
+\item[{{\bf H\+W\+Device} $\ast$}]{to\+Check}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classDeviceManager_a2e15cd9f0728183029e9d078c942da0a}{}\label{classDeviceManager_a2e15cd9f0728183029e9d078c942da0a}
+This method check two different  between them and return a difference log. \index{Device\+Manager@{Device\+Manager}!check\+Devices\+Existence@{check\+Devices\+Existence}}
+\index{check\+Devices\+Existence@{check\+Devices\+Existence}!Device\+Manager@{Device\+Manager}}
+\subsubsection[{\texorpdfstring{check\+Devices\+Existence()}{checkDevicesExistence()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Device\+Manager\+::check\+Devices\+Existence (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classDeviceManager_af9949548d51650ab8ac223d32559f8f0}{}\label{classDeviceManager_af9949548d51650ab8ac223d32559f8f0}
+Check the existences of a specific device.
+
+\begin{DoxyReturn}{Returns}
+true if some device exists, false otherwise 
+\end{DoxyReturn}
+\index{Device\+Manager@{Device\+Manager}!check\+Devices\+From\+File@{check\+Devices\+From\+File}}
+\index{check\+Devices\+From\+File@{check\+Devices\+From\+File}!Device\+Manager@{Device\+Manager}}
+\subsubsection[{\texorpdfstring{check\+Devices\+From\+File(string path, int \&err, int \&size, int \&added, int \&removed)}{checkDevicesFromFile(string path, int &err, int &size, int &added, int &removed)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Base\+Difference}$\ast$$\ast$$\ast$ Device\+Manager\+::check\+Devices\+From\+File (
+\begin{DoxyParamCaption}
+\item[{string}]{path, }
+\item[{int \&}]{err, }
+\item[{int \&}]{size, }
+\item[{int \&}]{added, }
+\item[{int \&}]{removed}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classDeviceManager_a571878f54147f206f63aad938fb59b51}{}\label{classDeviceManager_a571878f54147f206f63aad938fb59b51}
+This method checks devices retrieved on the machine with a well-\/formed log passed by param.
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & log file path \\
+\hline
+{\em err} & error message (0 = OK, -\/1 = S\+O\+M\+E\+T\+H\+I\+NG W\+E\+NT W\+R\+O\+NG) \\
+\hline
+{\em size} & difference log size \\
+\hline
+{\em added} & number of devices apparently added \\
+\hline
+{\em removed} & number of devices apparently removed \\
+\hline
+\end{DoxyParams}
+\index{Device\+Manager@{Device\+Manager}!count\+Devices\+From\+File@{count\+Devices\+From\+File}}
+\index{count\+Devices\+From\+File@{count\+Devices\+From\+File}!Device\+Manager@{Device\+Manager}}
+\subsubsection[{\texorpdfstring{count\+Devices\+From\+File(string path)}{countDevicesFromFile(string path)}}]{\setlength{\rightskip}{0pt plus 5cm}int Device\+Manager\+::count\+Devices\+From\+File (
+\begin{DoxyParamCaption}
+\item[{string}]{path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classDeviceManager_a7e7bcbfe9ad42a5986d354352b80d917}{}\label{classDeviceManager_a7e7bcbfe9ad42a5986d354352b80d917}
+Return the number of devices retrieved in a log\+File.
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & the log file path \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+number of devices retrieved in a file 
+\end{DoxyReturn}
+\index{Device\+Manager@{Device\+Manager}!find\+Devices@{find\+Devices}}
+\index{find\+Devices@{find\+Devices}!Device\+Manager@{Device\+Manager}}
+\subsubsection[{\texorpdfstring{find\+Devices()}{findDevices()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Device\+Manager\+::find\+Devices (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classDeviceManager_a17458750431e2131c06e58e8b82a90d1}{}\label{classDeviceManager_a17458750431e2131c06e58e8b82a90d1}
+Find all devices in the system and set it the devices array of the class \index{Device\+Manager@{Device\+Manager}!generate\+All\+Devices@{generate\+All\+Devices}}
+\index{generate\+All\+Devices@{generate\+All\+Devices}!Device\+Manager@{Device\+Manager}}
+\subsubsection[{\texorpdfstring{generate\+All\+Devices()=0}{generateAllDevices()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Device\+Manager\+::generate\+All\+Devices (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classDeviceManager_ae9fa3bd3aa66f373d7748628b7ba26cc}{}\label{classDeviceManager_ae9fa3bd3aa66f373d7748628b7ba26cc}
+Generate and populate the devices array. This method will be overwritten from the specific classes (\hyperlink{classBIOS}{B\+I\+OS}, H\+DD, ecc..) 
+
+Implemented in \hyperlink{classMemoryDeviceManager_a84565386d5d9ada62c495558ba7c06f8}{Memory\+Device\+Manager}, \hyperlink{classNetworkCardManager_aa6a77a00f2366720ef0a4cbbe5c01a1d}{Network\+Card\+Manager}, \hyperlink{classBIOSManager_a51496e7da497767975a30fa0aeb53465}{B\+I\+O\+S\+Manager}, \hyperlink{classHardDiskManager_ac69f4cfc902fa23ff238f33ee9731c3c}{Hard\+Disk\+Manager}, and \hyperlink{classGraphicCardManager_a6c94b17b01bd0f27bf0822c269d1c41c}{Graphic\+Card\+Manager}.
+
+\index{Device\+Manager@{Device\+Manager}!generate\+Fake\+Device@{generate\+Fake\+Device}}
+\index{generate\+Fake\+Device@{generate\+Fake\+Device}!Device\+Manager@{Device\+Manager}}
+\subsubsection[{\texorpdfstring{generate\+Fake\+Device()=0}{generateFakeDevice()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf H\+W\+Device}$\ast$ Device\+Manager\+::generate\+Fake\+Device (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classDeviceManager_a218031345b7b61c79f427985d950c3f3}{}\label{classDeviceManager_a218031345b7b61c79f427985d950c3f3}
+This abstract method will produce a Fake (Specified by the concrete classes) Device that will be used later to compare devices 
+
+Implemented in \hyperlink{classNetworkCardManager_a473a9578d17f85f125183a6c48f86eb8}{Network\+Card\+Manager}, \hyperlink{classMemoryDeviceManager_aa652b05bfea23ce4dbe562ed158fb165}{Memory\+Device\+Manager}, \hyperlink{classHardDiskManager_a586e786b4512ec8dfb79edb743794b77}{Hard\+Disk\+Manager}, \hyperlink{classBIOSManager_ae75fe3a8dad20db9dfa5c3e9ddb2adfd}{B\+I\+O\+S\+Manager}, and \hyperlink{classGraphicCardManager_ac71590c819520e60a491c8e69252efe1}{Graphic\+Card\+Manager}.
+
+\index{Device\+Manager@{Device\+Manager}!generate\+Log@{generate\+Log}}
+\index{generate\+Log@{generate\+Log}!Device\+Manager@{Device\+Manager}}
+\subsubsection[{\texorpdfstring{generate\+Log()}{generateLog()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Device\+Manager\+::generate\+Log (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classDeviceManager_a0bbabbb33adf1eb6eee22ac78d1da7b7}{}\label{classDeviceManager_a0bbabbb33adf1eb6eee22ac78d1da7b7}
+Generate a log under the file\+Name path. This method iterate for each device and visit each information with a visitor able to log them. \index{Device\+Manager@{Device\+Manager}!generate\+Log\+Difference@{generate\+Log\+Difference}}
+\index{generate\+Log\+Difference@{generate\+Log\+Difference}!Device\+Manager@{Device\+Manager}}
+\subsubsection[{\texorpdfstring{generate\+Log\+Difference()=0}{generateLogDifference()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Base\+Difference}$\ast$$\ast$ Device\+Manager\+::generate\+Log\+Difference (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classDeviceManager_ae9916011e50a6a48aea3d87b6c44b27e}{}\label{classDeviceManager_ae9916011e50a6a48aea3d87b6c44b27e}
+This abstract method will produce a \hyperlink{classBaseDifference}{Base\+Difference}, it will be used to compare different  between them.
+
+\begin{DoxyReturn}{Returns}
+the differences to populate 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classNetworkCardManager_a8dc8b4267433e57c6450fb7ebb0a43f6}{Network\+Card\+Manager}, \hyperlink{classMemoryDeviceManager_a1462e426adfe44f815359fb7f8b096b1}{Memory\+Device\+Manager}, \hyperlink{classHardDiskManager_ae8579afefc3c0619ef05c30b9fda3b82}{Hard\+Disk\+Manager}, \hyperlink{classBIOSManager_adac6d8eaa4f657834592928b28f29b65}{B\+I\+O\+S\+Manager}, and \hyperlink{classGraphicCardManager_a17d988dac37f04cb1dddd45eef8c3aea}{Graphic\+Card\+Manager}.
+
+\index{Device\+Manager@{Device\+Manager}!generate\+New\+Device@{generate\+New\+Device}}
+\index{generate\+New\+Device@{generate\+New\+Device}!Device\+Manager@{Device\+Manager}}
+\subsubsection[{\texorpdfstring{generate\+New\+Device(int position)=0}{generateNewDevice(int position)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf H\+W\+Device}$\ast$ Device\+Manager\+::generate\+New\+Device (
+\begin{DoxyParamCaption}
+\item[{int}]{position}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classDeviceManager_a64c7c17d8cb8d407361dbcf8f6f17ccf}{}\label{classDeviceManager_a64c7c17d8cb8d407361dbcf8f6f17ccf}
+Generate and return a new device in a specific position.
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & used by the device \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the generated device 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classMemoryDeviceManager_a2fa6b078f50c4bfbbbef218b8289ee89}{Memory\+Device\+Manager}, \hyperlink{classNetworkCardManager_a675dcf10689da520c3ab5ff32d066811}{Network\+Card\+Manager}, \hyperlink{classBIOSManager_a18f5940451895ec20a049da0b7c01d7d}{B\+I\+O\+S\+Manager}, \hyperlink{classHardDiskManager_a3960650a3232567f3488fb10fb10fa7c}{Hard\+Disk\+Manager}, and \hyperlink{classGraphicCardManager_a1835a9054bccb574e74dc2ebb2c28554}{Graphic\+Card\+Manager}.
+
+\index{Device\+Manager@{Device\+Manager}!get\+Devices@{get\+Devices}}
+\index{get\+Devices@{get\+Devices}!Device\+Manager@{Device\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Devices()}{getDevices()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf H\+W\+Device}$\ast$$\ast$ Device\+Manager\+::get\+Devices (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classDeviceManager_a6d01b46c8522dc3d5a7cefbab539a21d}{}\label{classDeviceManager_a6d01b46c8522dc3d5a7cefbab539a21d}
+Return the devices array
+
+\begin{DoxyReturn}{Returns}
+devices array 
+\end{DoxyReturn}
+\index{Device\+Manager@{Device\+Manager}!get\+File\+Path@{get\+File\+Path}}
+\index{get\+File\+Path@{get\+File\+Path}!Device\+Manager@{Device\+Manager}}
+\subsubsection[{\texorpdfstring{get\+File\+Path()}{getFilePath()}}]{\setlength{\rightskip}{0pt plus 5cm}string Device\+Manager\+::get\+File\+Path (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classDeviceManager_aebc35de93caa9623ac28166f463494fb}{}\label{classDeviceManager_aebc35de93caa9623ac28166f463494fb}
+Return the file path \index{Device\+Manager@{Device\+Manager}!get\+Number\+Of\+Devices@{get\+Number\+Of\+Devices}}
+\index{get\+Number\+Of\+Devices@{get\+Number\+Of\+Devices}!Device\+Manager@{Device\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Number\+Of\+Devices()}{getNumberOfDevices()}}]{\setlength{\rightskip}{0pt plus 5cm}int Device\+Manager\+::get\+Number\+Of\+Devices (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classDeviceManager_ab0e75c9472f3213243f5be200cf8a459}{}\label{classDeviceManager_ab0e75c9472f3213243f5be200cf8a459}
+Return the number of devices
+
+\begin{DoxyReturn}{Returns}
+number of devices 
+\end{DoxyReturn}
+\index{Device\+Manager@{Device\+Manager}!print\+All\+Infos@{print\+All\+Infos}}
+\index{print\+All\+Infos@{print\+All\+Infos}!Device\+Manager@{Device\+Manager}}
+\subsubsection[{\texorpdfstring{print\+All\+Infos()}{printAllInfos()}}]{\setlength{\rightskip}{0pt plus 5cm}void Device\+Manager\+::print\+All\+Infos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classDeviceManager_ac5ebb7ae4c669b43e96f2c533880c2a2}{}\label{classDeviceManager_ac5ebb7ae4c669b43e96f2c533880c2a2}
+Print all infos about devices with the following format\+: P\+R\+O\+P\+E\+R\+TY \+: V\+A\+L\+UE \index{Device\+Manager@{Device\+Manager}!retrieve\+From\+File@{retrieve\+From\+File}}
+\index{retrieve\+From\+File@{retrieve\+From\+File}!Device\+Manager@{Device\+Manager}}
+\subsubsection[{\texorpdfstring{retrieve\+From\+File(string path, int \&err, int \&size)}{retrieveFromFile(string path, int &err, int &size)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf H\+W\+Device}$\ast$$\ast$ Device\+Manager\+::retrieve\+From\+File (
+\begin{DoxyParamCaption}
+\item[{string}]{path, }
+\item[{int \&}]{err, }
+\item[{int \&}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classDeviceManager_a8c9576d042fb3a949c7658bb514a54ae}{}\label{classDeviceManager_a8c9576d042fb3a949c7658bb514a54ae}
+Return an H\+W\+Device$\ast$ array from a log file passed as parameter.
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & the log file path \\
+\hline
+{\em err} & errors\mbox{[} 0 = OK, 1 = NO D\+E\+V\+I\+C\+ES F\+O\+U\+ND\mbox{]} \\
+\hline
+{\em size} & the output array size \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+H\+W\+Device$\ast$ array 
+\end{DoxyReturn}
+\index{Device\+Manager@{Device\+Manager}!set\+All\+Infos@{set\+All\+Infos}}
+\index{set\+All\+Infos@{set\+All\+Infos}!Device\+Manager@{Device\+Manager}}
+\subsubsection[{\texorpdfstring{set\+All\+Infos(int position)}{setAllInfos(int position)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Device\+Manager\+::set\+All\+Infos (
+\begin{DoxyParamCaption}
+\item[{int}]{position}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classDeviceManager_a4c34a8b9035b29829739c533b611ab07}{}\label{classDeviceManager_a4c34a8b9035b29829739c533b611ab07}
+Set all devices informations, by default this method set all properties using the commands array and pass it, with a visitor, to the property
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & the device position in the device array \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{classNetworkCardManager_a880800c63daa416ec642691c0d85ca4a}{Network\+Card\+Manager}.
+
+\index{Device\+Manager@{Device\+Manager}!set\+Commands@{set\+Commands}}
+\index{set\+Commands@{set\+Commands}!Device\+Manager@{Device\+Manager}}
+\subsubsection[{\texorpdfstring{set\+Commands(int device\+Position)=0}{setCommands(int devicePosition)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Device\+Manager\+::set\+Commands (
+\begin{DoxyParamCaption}
+\item[{int}]{device\+Position}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classDeviceManager_ae367c6847b2988cf6249cbf6254261cb}{}\label{classDeviceManager_ae367c6847b2988cf6249cbf6254261cb}
+Set all commands used to retrieve infos. This method will be overwritten from the specific classes (\hyperlink{classBIOS}{B\+I\+OS}, H\+DD, ecc...)
+
+
+\begin{DoxyParams}{Parameters}
+{\em device\+Position} & the device position in the devices array \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classMemoryDeviceManager_a0246a46d583a717dfabc625a5e387400}{Memory\+Device\+Manager}, \hyperlink{classNetworkCardManager_a9204cc788a83cafc73b2f798963417a2}{Network\+Card\+Manager}, \hyperlink{classBIOSManager_aaa51bf1d61f4609484a9903fe5a6340e}{B\+I\+O\+S\+Manager}, \hyperlink{classHardDiskManager_a8e219e6e508dd2d8a6190c44bcf45782}{Hard\+Disk\+Manager}, and \hyperlink{classGraphicCardManager_a42bc616062f94b2e4ee92a79ba537a16}{Graphic\+Card\+Manager}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/doomdiskday/workspace2/main/src/model/\+H\+W/\+Basic/Device\+Manager.\+h\end{DoxyCompactItemize}

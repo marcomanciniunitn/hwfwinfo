@@ -1,0 +1,102 @@
+\hypertarget{classBaseDifference}{}\section{Base\+Difference Class Reference}
+\label{classBaseDifference}\index{Base\+Difference@{Base\+Difference}}
+
+
+{\ttfamily \#include $<$Base\+Difference.\+h$>$}
+
+Inheritance diagram for Base\+Difference\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classBaseDifference}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBaseDifference_ad9fe8c26c1ce15bc9e89bbfba57018af}{Base\+Difference} ()
+\item 
+void {\bfseries set\+Check} (bool check)\hypertarget{classBaseDifference_a2f942b77a94f991b25b5b7d610f1e827}{}\label{classBaseDifference_a2f942b77a94f991b25b5b7d610f1e827}
+
+\item 
+bool {\bfseries get\+Check} ()\hypertarget{classBaseDifference_a4fc53b0783ce154971468ae1e03bb1ec}{}\label{classBaseDifference_a4fc53b0783ce154971468ae1e03bb1ec}
+
+\item 
+void {\bfseries set\+Prop} (string prop)\hypertarget{classBaseDifference_a07199ac3c1cb1182caa73b2409608ea9}{}\label{classBaseDifference_a07199ac3c1cb1182caa73b2409608ea9}
+
+\item 
+string {\bfseries get\+Prop} ()\hypertarget{classBaseDifference_af8f73848d23d96034d2c326fbd258f2a}{}\label{classBaseDifference_af8f73848d23d96034d2c326fbd258f2a}
+
+\item 
+virtual void \hyperlink{classBaseDifference_ab369b45441dc65ae4346031872b70122}{visit\+To\+Assign} (\hyperlink{classVisitor}{Visitor} \&v, string to\+Assign)=0
+\item 
+virtual void \hyperlink{classBaseDifference_ab7a85a4a4ef9ef3a3e9abc97d3e19af4}{visit\+To\+Print} (\hyperlink{classVisitor}{Visitor} \&v)=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries check}\hypertarget{classBaseDifference_a28ad8522789fca062d1f14cf60ca34fa}{}\label{classBaseDifference_a28ad8522789fca062d1f14cf60ca34fa}
+
+\item 
+string {\bfseries prop}\hypertarget{classBaseDifference_ac476496c52f737394c5c4d42df4e3f9d}{}\label{classBaseDifference_ac476496c52f737394c5c4d42df4e3f9d}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Models a basic difference 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Base\+Difference@{Base\+Difference}!Base\+Difference@{Base\+Difference}}
+\index{Base\+Difference@{Base\+Difference}!Base\+Difference@{Base\+Difference}}
+\subsubsection[{\texorpdfstring{Base\+Difference()}{BaseDifference()}}]{\setlength{\rightskip}{0pt plus 5cm}Base\+Difference\+::\+Base\+Difference (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classBaseDifference_ad9fe8c26c1ce15bc9e89bbfba57018af}{}\label{classBaseDifference_ad9fe8c26c1ce15bc9e89bbfba57018af}
+Default = no difference 
+
+\subsection{Member Function Documentation}
+\index{Base\+Difference@{Base\+Difference}!visit\+To\+Assign@{visit\+To\+Assign}}
+\index{visit\+To\+Assign@{visit\+To\+Assign}!Base\+Difference@{Base\+Difference}}
+\subsubsection[{\texorpdfstring{visit\+To\+Assign(\+Visitor \&v, string to\+Assign)=0}{visitToAssign(Visitor &v, string toAssign)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Base\+Difference\+::visit\+To\+Assign (
+\begin{DoxyParamCaption}
+\item[{{\bf Visitor} \&}]{v, }
+\item[{string}]{to\+Assign}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classBaseDifference_ab369b45441dc65ae4346031872b70122}{}\label{classBaseDifference_ab369b45441dc65ae4346031872b70122}
+Method used to visit the base difference and set his generic value
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & visitor used to visit the base difference \\
+\hline
+{\em to\+Assign} & value to assign, it\textquotesingle{}s a string and the specific implementation will know how to handle and cast it properly \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classBaseLogDifference_ad2174b64f0c611ea9398d49226f48f4f}{Base\+Log\+Difference$<$ T $>$}.
+
+\index{Base\+Difference@{Base\+Difference}!visit\+To\+Print@{visit\+To\+Print}}
+\index{visit\+To\+Print@{visit\+To\+Print}!Base\+Difference@{Base\+Difference}}
+\subsubsection[{\texorpdfstring{visit\+To\+Print(\+Visitor \&v)=0}{visitToPrint(Visitor &v)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Base\+Difference\+::visit\+To\+Print (
+\begin{DoxyParamCaption}
+\item[{{\bf Visitor} \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classBaseDifference_ab7a85a4a4ef9ef3a3e9abc97d3e19af4}{}\label{classBaseDifference_ab7a85a4a4ef9ef3a3e9abc97d3e19af4}
+Method used to visit the base difference and print his property
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & visitor used to print it. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classBaseLogDifference_aedf247712392189dc236bd82e8fa8ea0}{Base\+Log\+Difference$<$ T $>$}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/doomdiskday/workspace2/main/src/model/\+H\+W/\+Basic/Base\+Difference.\+h\end{DoxyCompactItemize}

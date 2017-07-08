@@ -1,0 +1,115 @@
+\hypertarget{classMemoryDeviceManager}{}\section{Memory\+Device\+Manager Class Reference}
+\label{classMemoryDeviceManager}\index{Memory\+Device\+Manager@{Memory\+Device\+Manager}}
+
+
+{\ttfamily \#include $<$Memory\+Device\+Manager.\+h$>$}
+
+Inheritance diagram for Memory\+Device\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classMemoryDeviceManager}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classMemoryDeviceManager_a84565386d5d9ada62c495558ba7c06f8}{generate\+All\+Devices} ()
+\item 
+\hyperlink{classHWDevice}{H\+W\+Device} $\ast$ \hyperlink{classMemoryDeviceManager_a2fa6b078f50c4bfbbbef218b8289ee89}{generate\+New\+Device} (int position)
+\item 
+void \hyperlink{classMemoryDeviceManager_a0246a46d583a717dfabc625a5e387400}{set\+Commands} (int device\+Position)
+\item 
+\hyperlink{classBaseDifference}{Base\+Difference} $\ast$$\ast$ \hyperlink{classMemoryDeviceManager_a1462e426adfe44f815359fb7f8b096b1}{generate\+Log\+Difference} ()
+\item 
+\hyperlink{classHWDevice}{H\+W\+Device} $\ast$ \hyperlink{classMemoryDeviceManager_aa652b05bfea23ce4dbe562ed158fb165}{generate\+Fake\+Device} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Reppresents a Memory device manager, it\textquotesingle{}s used to manage all memory devices . 
+
+\subsection{Member Function Documentation}
+\index{Memory\+Device\+Manager@{Memory\+Device\+Manager}!generate\+All\+Devices@{generate\+All\+Devices}}
+\index{generate\+All\+Devices@{generate\+All\+Devices}!Memory\+Device\+Manager@{Memory\+Device\+Manager}}
+\subsubsection[{\texorpdfstring{generate\+All\+Devices()}{generateAllDevices()}}]{\setlength{\rightskip}{0pt plus 5cm}void Memory\+Device\+Manager\+::generate\+All\+Devices (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classMemoryDeviceManager_a84565386d5d9ada62c495558ba7c06f8}{}\label{classMemoryDeviceManager_a84565386d5d9ada62c495558ba7c06f8}
+Generate and populate the devices array. This method will be overwritten from the specific classes (\hyperlink{classBIOS}{B\+I\+OS}, H\+DD, ecc..) 
+
+Implements \hyperlink{classDeviceManager_ae9fa3bd3aa66f373d7748628b7ba26cc}{Device\+Manager}.
+
+\index{Memory\+Device\+Manager@{Memory\+Device\+Manager}!generate\+Fake\+Device@{generate\+Fake\+Device}}
+\index{generate\+Fake\+Device@{generate\+Fake\+Device}!Memory\+Device\+Manager@{Memory\+Device\+Manager}}
+\subsubsection[{\texorpdfstring{generate\+Fake\+Device()}{generateFakeDevice()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf H\+W\+Device} $\ast$ Memory\+Device\+Manager\+::generate\+Fake\+Device (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classMemoryDeviceManager_aa652b05bfea23ce4dbe562ed158fb165}{}\label{classMemoryDeviceManager_aa652b05bfea23ce4dbe562ed158fb165}
+This abstract method will produce a Fake (Specified by the concrete classes) Device that will be used later to compare devices 
+
+Implements \hyperlink{classDeviceManager_a218031345b7b61c79f427985d950c3f3}{Device\+Manager}.
+
+\index{Memory\+Device\+Manager@{Memory\+Device\+Manager}!generate\+Log\+Difference@{generate\+Log\+Difference}}
+\index{generate\+Log\+Difference@{generate\+Log\+Difference}!Memory\+Device\+Manager@{Memory\+Device\+Manager}}
+\subsubsection[{\texorpdfstring{generate\+Log\+Difference()}{generateLogDifference()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Base\+Difference} $\ast$$\ast$ Memory\+Device\+Manager\+::generate\+Log\+Difference (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classMemoryDeviceManager_a1462e426adfe44f815359fb7f8b096b1}{}\label{classMemoryDeviceManager_a1462e426adfe44f815359fb7f8b096b1}
+This abstract method will produce a \hyperlink{classBaseDifference}{Base\+Difference}, it will be used to compare different  between them.
+
+\begin{DoxyReturn}{Returns}
+the differences to populate 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classDeviceManager_ae9916011e50a6a48aea3d87b6c44b27e}{Device\+Manager}.
+
+\index{Memory\+Device\+Manager@{Memory\+Device\+Manager}!generate\+New\+Device@{generate\+New\+Device}}
+\index{generate\+New\+Device@{generate\+New\+Device}!Memory\+Device\+Manager@{Memory\+Device\+Manager}}
+\subsubsection[{\texorpdfstring{generate\+New\+Device(int position)}{generateNewDevice(int position)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf H\+W\+Device} $\ast$ Memory\+Device\+Manager\+::generate\+New\+Device (
+\begin{DoxyParamCaption}
+\item[{int}]{position}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classMemoryDeviceManager_a2fa6b078f50c4bfbbbef218b8289ee89}{}\label{classMemoryDeviceManager_a2fa6b078f50c4bfbbbef218b8289ee89}
+Generate and return a new device in a specific position.
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & used by the device \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the generated device 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classDeviceManager_a64c7c17d8cb8d407361dbcf8f6f17ccf}{Device\+Manager}.
+
+\index{Memory\+Device\+Manager@{Memory\+Device\+Manager}!set\+Commands@{set\+Commands}}
+\index{set\+Commands@{set\+Commands}!Memory\+Device\+Manager@{Memory\+Device\+Manager}}
+\subsubsection[{\texorpdfstring{set\+Commands(int device\+Position)}{setCommands(int devicePosition)}}]{\setlength{\rightskip}{0pt plus 5cm}void Memory\+Device\+Manager\+::set\+Commands (
+\begin{DoxyParamCaption}
+\item[{int}]{device\+Position}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classMemoryDeviceManager_a0246a46d583a717dfabc625a5e387400}{}\label{classMemoryDeviceManager_a0246a46d583a717dfabc625a5e387400}
+Set all commands used to retrieve infos. This method will be overwritten from the specific classes (\hyperlink{classBIOS}{B\+I\+OS}, H\+DD, ecc...)
+
+
+\begin{DoxyParams}{Parameters}
+{\em device\+Position} & the device position in the devices array \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classDeviceManager_ae367c6847b2988cf6249cbf6254261cb}{Device\+Manager}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/doomdiskday/workspace2/main/src/model/\+H\+W/\+Memory/Memory\+Device\+Manager.\+h\item 
+/home/doomdiskday/workspace2/main/src/model/\+H\+W/\+Memory/Memory\+Device\+Manager.\+cpp\end{DoxyCompactItemize}

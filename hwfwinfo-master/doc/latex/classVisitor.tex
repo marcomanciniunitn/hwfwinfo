@@ -1,0 +1,268 @@
+\hypertarget{classVisitor}{}\section{Visitor Class Reference}
+\label{classVisitor}\index{Visitor@{Visitor}}
+
+
+{\ttfamily \#include $<$Visitor.\+h$>$}
+
+Inheritance diagram for Visitor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classVisitor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classVisitor_aa290c4e12905eb700f631b83ce77deea}{visit\+Base\+Info\+With\+Command} (int \&v, \hyperlink{classCommand}{Command} $\ast$cmd)=0
+\item 
+virtual void \hyperlink{classVisitor_aa6045f028cc91712ab5cca38e1461d39}{visit\+Base\+Info\+With\+Command} (string \&v, \hyperlink{classCommand}{Command} $\ast$cmd)=0
+\item 
+virtual void \hyperlink{classVisitor_a3d6f39af42e955dcd56d1d928f6edfe2}{visit\+Base\+Info\+To\+Print} (int v, string property)=0
+\item 
+virtual void \hyperlink{classVisitor_a9f87fbabd6b8cd4d5456d81faff2c31a}{visit\+Base\+Info\+To\+Print} (string v, string property)=0
+\item 
+virtual void \hyperlink{classVisitor_addcf4dbedba4a2ba739d0fdef144eb6d}{visit\+Base\+Info\+To\+Log} (int v, string property, F\+I\+LE $\ast$log\+File)=0
+\item 
+virtual void \hyperlink{classVisitor_a591ed3a6edd9b31a8a1b2847c5a22e29}{visit\+Base\+Info\+To\+Log} (string v, string property, F\+I\+LE $\ast$log\+File)=0
+\item 
+virtual void \hyperlink{classVisitor_a766dd43ac0c15f92b15a5b0fb90deca9}{visit\+Base\+Info\+With\+Value} (int \&v, string to\+Assign)=0
+\item 
+virtual void \hyperlink{classVisitor_afb85cf66df37046633ef80f085c8c4fe}{visit\+Base\+Info\+With\+Value} (string \&v, string to\+Assign)=0
+\item 
+virtual void \hyperlink{classVisitor_a3e8e80f88fd9513a971f4db4cde00ef7}{visit\+Log\+To\+Print} (bool check, string prop, string value)=0
+\item 
+virtual void \hyperlink{classVisitor_ac889258497b1a2c2d673de0ceb3b227b}{visit\+Log\+To\+Print} (bool check, string prop, int value)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class rappresents a generic visitor. It\textquotesingle{}s used to visit and manage (set, print, log) both property and logdifferences. 
+
+\subsection{Member Function Documentation}
+\index{Visitor@{Visitor}!visit\+Base\+Info\+To\+Log@{visit\+Base\+Info\+To\+Log}}
+\index{visit\+Base\+Info\+To\+Log@{visit\+Base\+Info\+To\+Log}!Visitor@{Visitor}}
+\subsubsection[{\texorpdfstring{visit\+Base\+Info\+To\+Log(int v, string property, F\+I\+L\+E $\ast$log\+File)=0}{visitBaseInfoToLog(int v, string property, FILE *logFile)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Visitor\+::visit\+Base\+Info\+To\+Log (
+\begin{DoxyParamCaption}
+\item[{int}]{v, }
+\item[{string}]{property, }
+\item[{F\+I\+LE $\ast$}]{log\+File}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classVisitor_addcf4dbedba4a2ba739d0fdef144eb6d}{}\label{classVisitor_addcf4dbedba4a2ba739d0fdef144eb6d}
+Method used to visit a baseinfo and log his value and his property
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & the int value to log \\
+\hline
+{\em property} & the property to log \\
+\hline
+{\em log\+File} & the log file to populate. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classBaseInfoVisitor_adf0f9a3ad34d26595ee2cb78cc370a65}{Base\+Info\+Visitor}.
+
+\index{Visitor@{Visitor}!visit\+Base\+Info\+To\+Log@{visit\+Base\+Info\+To\+Log}}
+\index{visit\+Base\+Info\+To\+Log@{visit\+Base\+Info\+To\+Log}!Visitor@{Visitor}}
+\subsubsection[{\texorpdfstring{visit\+Base\+Info\+To\+Log(string v, string property, F\+I\+L\+E $\ast$log\+File)=0}{visitBaseInfoToLog(string v, string property, FILE *logFile)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Visitor\+::visit\+Base\+Info\+To\+Log (
+\begin{DoxyParamCaption}
+\item[{string}]{v, }
+\item[{string}]{property, }
+\item[{F\+I\+LE $\ast$}]{log\+File}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classVisitor_a591ed3a6edd9b31a8a1b2847c5a22e29}{}\label{classVisitor_a591ed3a6edd9b31a8a1b2847c5a22e29}
+Method used to visit a baseinfo and log his value and his property
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & the string value to log \\
+\hline
+{\em property} & the property to log \\
+\hline
+{\em log\+File} & the log file to populate. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classBaseInfoVisitor_a8590d40b5c1c277dee482518ad31c494}{Base\+Info\+Visitor}.
+
+\index{Visitor@{Visitor}!visit\+Base\+Info\+To\+Print@{visit\+Base\+Info\+To\+Print}}
+\index{visit\+Base\+Info\+To\+Print@{visit\+Base\+Info\+To\+Print}!Visitor@{Visitor}}
+\subsubsection[{\texorpdfstring{visit\+Base\+Info\+To\+Print(int v, string property)=0}{visitBaseInfoToPrint(int v, string property)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Visitor\+::visit\+Base\+Info\+To\+Print (
+\begin{DoxyParamCaption}
+\item[{int}]{v, }
+\item[{string}]{property}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classVisitor_a3d6f39af42e955dcd56d1d928f6edfe2}{}\label{classVisitor_a3d6f39af42e955dcd56d1d928f6edfe2}
+Method used to visit a baseinfo and print his value and his property
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & the int value to print \\
+\hline
+{\em property} & the property to print \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classBaseInfoVisitor_a395234ebebdfbaf4f7e155bfc0a5aa5d}{Base\+Info\+Visitor}.
+
+\index{Visitor@{Visitor}!visit\+Base\+Info\+To\+Print@{visit\+Base\+Info\+To\+Print}}
+\index{visit\+Base\+Info\+To\+Print@{visit\+Base\+Info\+To\+Print}!Visitor@{Visitor}}
+\subsubsection[{\texorpdfstring{visit\+Base\+Info\+To\+Print(string v, string property)=0}{visitBaseInfoToPrint(string v, string property)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Visitor\+::visit\+Base\+Info\+To\+Print (
+\begin{DoxyParamCaption}
+\item[{string}]{v, }
+\item[{string}]{property}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classVisitor_a9f87fbabd6b8cd4d5456d81faff2c31a}{}\label{classVisitor_a9f87fbabd6b8cd4d5456d81faff2c31a}
+Method used to visit a baseinfo and print his value and his property
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & the string value to print \\
+\hline
+{\em property} & the property to print \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classBaseInfoVisitor_a5be08c690d21e5c1d9257efdf0a75ca4}{Base\+Info\+Visitor}.
+
+\index{Visitor@{Visitor}!visit\+Base\+Info\+With\+Command@{visit\+Base\+Info\+With\+Command}}
+\index{visit\+Base\+Info\+With\+Command@{visit\+Base\+Info\+With\+Command}!Visitor@{Visitor}}
+\subsubsection[{\texorpdfstring{visit\+Base\+Info\+With\+Command(int \&v, Command $\ast$cmd)=0}{visitBaseInfoWithCommand(int &v, Command *cmd)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Visitor\+::visit\+Base\+Info\+With\+Command (
+\begin{DoxyParamCaption}
+\item[{int \&}]{v, }
+\item[{{\bf Command} $\ast$}]{cmd}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classVisitor_aa290c4e12905eb700f631b83ce77deea}{}\label{classVisitor_aa290c4e12905eb700f631b83ce77deea}
+Method used to visit a baseinfo and set his value to an information retrieved by a command passed by param
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & the int value to set \\
+\hline
+{\em cmd} & the command used \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classBaseInfoVisitor_a96013581736191e0c186746f061b6d2e}{Base\+Info\+Visitor}.
+
+\index{Visitor@{Visitor}!visit\+Base\+Info\+With\+Command@{visit\+Base\+Info\+With\+Command}}
+\index{visit\+Base\+Info\+With\+Command@{visit\+Base\+Info\+With\+Command}!Visitor@{Visitor}}
+\subsubsection[{\texorpdfstring{visit\+Base\+Info\+With\+Command(string \&v, Command $\ast$cmd)=0}{visitBaseInfoWithCommand(string &v, Command *cmd)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Visitor\+::visit\+Base\+Info\+With\+Command (
+\begin{DoxyParamCaption}
+\item[{string \&}]{v, }
+\item[{{\bf Command} $\ast$}]{cmd}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classVisitor_aa6045f028cc91712ab5cca38e1461d39}{}\label{classVisitor_aa6045f028cc91712ab5cca38e1461d39}
+Method used to visit a baseinfo and set his value to an information retrieved by a command passed by param
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & the string value to set \\
+\hline
+{\em cmd} & the command used \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classBaseInfoVisitor_a8615d145a52433f981a147642038fe91}{Base\+Info\+Visitor}.
+
+\index{Visitor@{Visitor}!visit\+Base\+Info\+With\+Value@{visit\+Base\+Info\+With\+Value}}
+\index{visit\+Base\+Info\+With\+Value@{visit\+Base\+Info\+With\+Value}!Visitor@{Visitor}}
+\subsubsection[{\texorpdfstring{visit\+Base\+Info\+With\+Value(int \&v, string to\+Assign)=0}{visitBaseInfoWithValue(int &v, string toAssign)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Visitor\+::visit\+Base\+Info\+With\+Value (
+\begin{DoxyParamCaption}
+\item[{int \&}]{v, }
+\item[{string}]{to\+Assign}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classVisitor_a766dd43ac0c15f92b15a5b0fb90deca9}{}\label{classVisitor_a766dd43ac0c15f92b15a5b0fb90deca9}
+Method used to visit a baseinfo and set his value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & the int value to set \\
+\hline
+{\em property} & the property to set \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classBaseInfoVisitor_a56c3bb5a441e77566e62881e5a82b9d8}{Base\+Info\+Visitor}.
+
+\index{Visitor@{Visitor}!visit\+Base\+Info\+With\+Value@{visit\+Base\+Info\+With\+Value}}
+\index{visit\+Base\+Info\+With\+Value@{visit\+Base\+Info\+With\+Value}!Visitor@{Visitor}}
+\subsubsection[{\texorpdfstring{visit\+Base\+Info\+With\+Value(string \&v, string to\+Assign)=0}{visitBaseInfoWithValue(string &v, string toAssign)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Visitor\+::visit\+Base\+Info\+With\+Value (
+\begin{DoxyParamCaption}
+\item[{string \&}]{v, }
+\item[{string}]{to\+Assign}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classVisitor_afb85cf66df37046633ef80f085c8c4fe}{}\label{classVisitor_afb85cf66df37046633ef80f085c8c4fe}
+Method used to visit a baseinfo and set his value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & the string value to set \\
+\hline
+{\em property} & the property to set \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classBaseInfoVisitor_adc07ce4d4919fccad038d90c9c820178}{Base\+Info\+Visitor}.
+
+\index{Visitor@{Visitor}!visit\+Log\+To\+Print@{visit\+Log\+To\+Print}}
+\index{visit\+Log\+To\+Print@{visit\+Log\+To\+Print}!Visitor@{Visitor}}
+\subsubsection[{\texorpdfstring{visit\+Log\+To\+Print(bool check, string prop, string value)=0}{visitLogToPrint(bool check, string prop, string value)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Visitor\+::visit\+Log\+To\+Print (
+\begin{DoxyParamCaption}
+\item[{bool}]{check, }
+\item[{string}]{prop, }
+\item[{string}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classVisitor_a3e8e80f88fd9513a971f4db4cde00ef7}{}\label{classVisitor_a3e8e80f88fd9513a971f4db4cde00ef7}
+Method used to visit a log file and populate it
+
+
+\begin{DoxyParams}{Parameters}
+{\em check} & the check value \\
+\hline
+{\em prop} & the property checked \\
+\hline
+{\em value} & the value checked \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classBaseInfoVisitor_ad0c9667e9004fd1494f79b09947b0620}{Base\+Info\+Visitor}.
+
+\index{Visitor@{Visitor}!visit\+Log\+To\+Print@{visit\+Log\+To\+Print}}
+\index{visit\+Log\+To\+Print@{visit\+Log\+To\+Print}!Visitor@{Visitor}}
+\subsubsection[{\texorpdfstring{visit\+Log\+To\+Print(bool check, string prop, int value)=0}{visitLogToPrint(bool check, string prop, int value)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Visitor\+::visit\+Log\+To\+Print (
+\begin{DoxyParamCaption}
+\item[{bool}]{check, }
+\item[{string}]{prop, }
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classVisitor_ac889258497b1a2c2d673de0ceb3b227b}{}\label{classVisitor_ac889258497b1a2c2d673de0ceb3b227b}
+Method used to visit a log file and populate it
+
+
+\begin{DoxyParams}{Parameters}
+{\em check} & the check value \\
+\hline
+{\em prop} & the property checked \\
+\hline
+{\em value} & the value checked \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classBaseInfoVisitor_a326f9be710640548f76a08253422318a}{Base\+Info\+Visitor}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/doomdiskday/workspace2/main/src/model/\+H\+W/\+Visitors/Visitor.\+h\end{DoxyCompactItemize}
