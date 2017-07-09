@@ -34,7 +34,7 @@ You can find the executable in the folder /hwfwinfo-master/Debug/hwfwinfo. Run i
 s
 ## Authors
 
-* **Marco Mancini** 
+* **Marco Mancini** - https://www.linkedin.com/in/marco-mancini-6b2969108/
 
 
 ## License
